@@ -1,9 +1,11 @@
 # Личный проект «Техномарт»
 
-* Студент: [Artem Artem](https://up.htmlacademy.ru/htmlcss/16/user/340977).
+* Студент: [Artem Medkov](https://up.htmlacademy.ru/htmlcss/16/user/340977).
 * Наставник: `Неизвестно`.
 
----
+----
+
+тест
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
