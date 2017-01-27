@@ -1,0 +1,27 @@
+body {
+    font-family: 'Cuprum', sans-serif;
+    line-height: 23px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: bold;
+    
+}
+
+h2 {
+    color: #32425c;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    
+}
