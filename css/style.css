@@ -25,3 +25,7 @@ h3 {
     font-size: 30px;
     
 }
+
+.slider-item h1 {
+    font-weight: bold;
+}
