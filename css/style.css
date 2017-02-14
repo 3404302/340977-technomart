@@ -4,8 +4,155 @@ body {
     font-weight: normal;
     font-size: 18px;
     color: #000000;
+}
+
+.section {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 130px;
+    background-color: chartreuse;
+}
+
+.section-inner {
+    background-color: coral;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.page-header {
+    background-color: #f1f5f7;
+    width: 0 auto;
+}
+
+.header-top-section {
+    background-color: #293449;
+  
+}
+
+.header-top-section-inner {
+    min-height: 42px;
+    margin: 0;
+    padding: 0;
+    background-color: #32425c;
+}
+
+.header-top-logo {
+    height: 42px;
+    float: left;
+    width: 220px;
+    margin-right: 10px;
+    background-color: azure;
+}
+
+.header-top-search {
+    min-height: 42px;
+    float: left;
+    width: 250px;
+    margin-right: 10px;
+    background-color: azure;
+}
+
+.header-top-menu {
+    height: 42px;
+    float: right;
+    width: 450px;
+    margin-right: 0;
+    padding: 0;
+    background-color: azure;
     
 }
+
+ul.header-top-list {
+    height: 42px;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.header-top-list li {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0;
+    width: 140px;
+}
+
+.header-top-list li:last-child {
+    width: 150px;
+    margin-right: 0;
+}
+
+/*
+.header-top-button {
+    float: right;
+    margin-left: 10px;
+}
+*/
+
+.header-middle-section-inner {
+    padding: 45px 0;
+    margin: 0;
+    background-color: beige;
+}
+
+.header-middle-left {
+    float: left;
+    width: 200px;
+    margin: 0;
+    margin-right: 20px;
+    background-color: azure;
+    height: 70px;
+}
+
+.header-middle-center {
+    float: left;
+    width: 220px;
+    margin: 0px;
+    margin-right: 20px;  
+    background-color: azure;
+    height: 70px;
+}
+
+.header-middle-box {
+    border: 3px solid white;
+    margin: 0;
+    height: 40px;
+    padding: 0;
+}
+
+.header-middle-right {
+    width: 200px;
+    float: right;
+    margin: 0;
+    background-color: azure;
+    height: 70px;
+}
+
+.registration-form-login {
+    visibility: hidden;
+}
+
+.header-bottom-section-inner {
+    min-height: 55px;
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
+}
+
+.header-nav li {
+    display: inline-block;
+    padding: 20px 0;
+    margin: 0;
+    
+}
+
+.header-nav li > a {
+    color: #f1f2f4;
+}
+
 
 h1 {
     color: #ffffff;
