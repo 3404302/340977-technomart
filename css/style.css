@@ -47,6 +47,7 @@ body {
 
 .page-header {
     background-color: #f1f5f7;
+    padding-bottom: 60px;
 }
 
 .header-top-section {
@@ -100,7 +101,7 @@ ul.header-top-list {
 }
 
 .header-top-list li:last-child {
-    background-color: aquamarine;
+    background-color: #63a63e;
 }
 
 /*
@@ -113,7 +114,7 @@ ul.header-top-list {
 .header-middle-section-inner {
     padding: 45px 0;
     padding-bottom: 40px;
-    background-color: beige;
+    background-color: #f1f5f7;
 }
 
 .header-middle-left {
@@ -126,15 +127,15 @@ ul.header-top-list {
 
 .header-middle-center {
     float: left;
-    width: 300px;
-    margin-right: 20px;  
+    width: 270px;
     background-color: azure;
     height: 72px;
 }
 
 .header-middle-box {
     border: 3px solid white;
-    height: 40px;
+    height: 39px;
+    display: block;
 }
 
 .header-middle-right {
