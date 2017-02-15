@@ -144,8 +144,21 @@ ul.header-top-list {
     height: 72px;
 }
 
-.registration-form-login {
+.registration-form {
     display: none;
+}
+
+.login-block {
+    width: 300px;
+    height: 45px;
+}
+
+ul.registration-form-list {
+    margin: 0;
+}
+
+.registration-form-list li {
+    display: inline-block;
 }
 
 .header-bottom-section-inner {
@@ -169,8 +182,20 @@ ul.header-top-list {
 }
 
 .page-content {
-    padding-top: 60px;
     background-color: #ffffff;
+}
+
+.breadcrumbs {
+    background-color: #ffffff;
+    height: 60px;
+}
+
+.breadcrumbs ul {
+    margin: 0px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
 }
 
 .promo-section-inner {
