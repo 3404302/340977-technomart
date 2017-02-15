@@ -176,6 +176,7 @@ ul.header-top-list {
 
 .promo-section-inner {
    background-color: #ffffff; 
+    padding-bottom: 55px;
 }
 
 .promo-item {
@@ -216,6 +217,169 @@ ul.header-top-list {
 .goods-header {
     background-color: #f7f3ec;
     height: 90px;
+}
+
+.goods-header h2 {
+    display: block;
+    float: left;
+    margin-left: 28px;
+    margin-bottom: 25px;
+}
+
+a.goods-header-button {
+    float: right;
+    margin-right: 25px;
+    height: 40px;
+    width: 255px;
+    padding-top: 25px;
+}
+
+.goods-items {
+    padding: 20px 0;
+    font-size: 0;
+}
+
+.goods-items .article-item {
+    width: 218px;
+    height: 318px;
+    font-size: 18px;
+    background-color: #ffffff;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    margin-right: 20px;
+}
+
+.goods-items .article-item:last-child {
+    margin-right: 0;
+}
+
+.brands-header {
+    background-color: #f7f3ec;
+    height: 90px;
+}
+
+.brands-items {
+    padding-top: 20px;
+    padding-bottom: 65px;
+    font-size: 0;
+    background-color: #ffffff;
+}
+
+.brands-header h2 {
+    display: block;
+    float: left;
+    margin-left: 28px;
+    margin-bottom: 25px;
+}
+
+a.brands-header-button {
+    float: right;
+    margin-right: 25px;
+    height: 40px;
+    width: 255px;
+    padding-top: 25px;
+}
+
+.brand-item {
+    display: inline-block;
+    height: 96px;
+    border: 1px solid #e5e5e5;
+    margin: 0 20px 20px 0;
+    width: 204px;
+    background-color: #ffffff;
+    padding: 23px 7px;
+}
+
+.brand-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.brand-item > img {
+    
+}
+
+.write-us {
+    display: none;
+}
+
+.services-section-inner {
+    padding-top: 65px;
+}
+
+.services-header {
+    width: 400px;
+}
+
+.services-header p {
+    margin-top: 34px;
+}
+
+.services-slider-2, .services-slider-3 {
+    display: none;
+}
+
+.services-slider-buttons {
+    width: 240px;
+    margin-right: 80px;
+    float: left;
+}
+
+.services-slider-buttons ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+.services-slider-buttons li {
+    width: 240px;
+    height: 60px;
+    background-color: aqua;
+}
+
+.services-slider-slides {
+    width: 620px;
+    float: right;
+    margin: 0;
+}
+
+.services-slider-slides p {
+    width: 300px;
+}
+
+.tekhnomart-section-inner {
+    padding-top: 75px;
+    padding-bottom: 85px;
+}
+
+.tekhnomart-left-column {
+    width: 540px;
+    height: 375px;
+    float: left;
+}
+
+.tekhnomart-left-button {
+    display: block;
+    width: 220px;
+    background-color: #ee3643;
+    height: 40px;
+}
+
+.tekhnomart-right-column {
+    float: right;
+    width: 300px;
+    height: 370px;
+}
+
+.tekhnomart-right-column img {
+
+    height: 159px;
+    
+}
+
+.tekhnomart-write-us-button {
+    display: block;
+    width: 300px;
+    background-color: #ee3643;
+    height: 40px;
 }
 
 
