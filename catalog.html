@@ -143,28 +143,51 @@
                         <form class="catalog-filter">
                             <p>Фильтр:</p>
                             <div class="catalog-filter-top">
-                            <h3>Цена:</h3>
-                            <input type="range" min="0" max="30000" id="range" name="range"> <!--Набор Gif-->
-                            <input type="number" id="from" name="from" placeholder="0">
-                            <input type="number" id="to" name="to" placeholder="30000">
+                                <h3>Цена:</h3>
+                                <input type="range" min="0" max="30000" id="range" name="range"> <!--Набор Gif-->
+                                <input type="number" id="range-from" name="range-from" placeholder="0">
+                                <span>-</span>
+                                <input type="number" id="range-to" name="range-to" placeholder="30000">
                             </div>
-                            <h3>Производители:</h3>
-                            <input type="checkbox" name="bosch" id="bosch" checked>
-                            <label for="bosch">Bosch</label>
-                            <input type="checkbox" name="interskol" id="interskol">
-                            <label for="interskol">Интерскол</label>
-                            <input type="checkbox" name="makita" id="makita" checked>
-                            <label for="makita">Makita</label>
-                            <input type="checkbox" name="dewalt" id="dewalt">
-                            <label for="dewalt">Dewalt</label>
-                            <input type="checkbox" name="hitachi" id="hitachi">
-                            <label for="htachi">Hitachi</label>
-                            <h3>Питание:</h3>
-                            <input type="radio" name="accum" id="accum">  
-                            <label for="accum">Аккумуляторные</label>
-                            <input type="radio" name="power" id="power">
-                            <label for="power">Сетевые</label>
-                            <input type="button" value="Показать">
+                            <div class="catalog-filter-middle">
+                                <h3>Производители:</h3>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="bosch" id="bosch" checked>
+                                        <label for="bosch">Bosch</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="interskol" id="interskol">
+                                        <label for="interskol">Интерскол</label>
+                                    </li>                    
+                                    <li>
+                                        <input type="checkbox" name="makita" id="makita" checked>
+                                        <label for="makita">Makita</label>
+                                    </li>    
+                                    <li>
+                                        <input type="checkbox" name="dewalt" id="dewalt">
+                                        <label for="dewalt">Dewalt</label>
+                                    </li> 
+                                    <li>
+                                        <input type="checkbox" name="hitachi" id="hitachi">
+                                        <label for="htachi">Hitachi</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalog-filter-bottom">
+                                <h3>Питание:</h3>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="accum" id="accum">  
+                                        <label for="accum">Аккумуляторные</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="power" id="power">
+                                        <label for="power">Сетевые</label>
+                                    </li>
+                                    </ul>
+                                <input type="button" value="Показать">
+                            </div>
                         </form>
                     </div>
                     <div class="catalog-right-column">
@@ -209,7 +232,7 @@
                                 <span>30500 Р.</span>
                                 <a class="button add-to-cart-button" href="#">25500 Р.</a>
                             </article>
-                            <article class="active article-item-add">
+                            <article class="active article-item">
                                 <img src="/img/item-2000.jpg" alt="Bosch BFG 2000" width="184px" height="164px">
                                 <a class="button inner-cart-button" href="#">Купить</a>
                                 <a class="button itter--favorites-button" href="#">В Закладки</a>
