@@ -341,11 +341,10 @@ ul.catalog-sort-items {
 
 
 .page-footer {
-    
+    background-color: #32425c;
 }
 
 .footer-top-section-inner {
-    background-color: #32425c;
     padding-bottom: 55px;
 }
 
@@ -367,8 +366,12 @@ ul.footer-navigation-bottom li {
     display: inline-block;
 }
 
-.footer-bottom-section-inner {
+.footer-bottom-section {
     background-color: #293449;
+}
+
+.footer-bottom-section-inner {
+    
     padding-top: 35px;
     padding-bottom: 30px;
 }
@@ -396,6 +399,7 @@ ul.footer-navigation-bottom li {
     margin-left: 10px;
     font-size: 10px;
 }
+
 
 h1 {
     color: #ffffff;
