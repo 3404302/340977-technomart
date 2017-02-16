@@ -11,11 +11,10 @@ body {
 	width: 100%;
 	min-width: 940px;
 	position: relative;
-    background-color: chartreuse;
 }
 
 .section-inner {
-    background-color: coral;
+    
 }
 
 .section-inner {
@@ -47,17 +46,14 @@ body {
 
 .page-header {
     background-color: #f1f5f7;
-    padding-bottom: 60px;
 }
 
 .header-top-section {
-    background-color: #293449;
-  
+    background-color: #32425c;
 }
 
 .header-top-section-inner {
-    min-height: 42px;
-    background-color: #32425c;
+    min-height: 42px; 
 }
 
 .header-top-logo {
@@ -113,7 +109,7 @@ ul.header-top-list {
 .header-middle-section-inner {
     padding: 45px 0;
     padding-bottom: 40px;
-    background-color: #f1f5f7;
+    
 }
 
 .header-middle-left {
@@ -161,15 +157,24 @@ ul.registration-form-list {
     display: inline-block;
 }
 
-.header-bottom-section-inner {
-    height: 60px;
-    background-color: #32425c;
-    border-bottom: 5px solid #293449;
+.header-bottom-section {
+    
+    
 }
 
+.header-bottom-section-inner {
+    height: 120px;
+    
+    padding-bottom: 60px;
+}
+
+
 .header-navigation {
+    height: 55px;
     margin: 20px 0;
     padding-left: 50px;
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
 }
 
 .header-navigation li {
@@ -182,7 +187,7 @@ ul.registration-form-list {
 }
 
 .page-content {
-    background-color: #ffffff;
+    
 }
 
 .breadcrumbs {
@@ -222,7 +227,7 @@ ul.registration-form-list {
 }
 
 .catalog-filter {
-    background-color: #ffffff;
+    
 }
 
 .catalog-filter-top, .catalog-filter-middle, .catalog-filter-bottom {
@@ -305,14 +310,15 @@ ul.catalog-sort-items {
 }
 
 .catalog-items .article-item {
-    width: 218px;
-    height: 318px;
+    width: 220px;
+    height: 320px;
     font-size: 18px;
     background-color: #ffffff;
     display: inline-block;
     border: 1px solid #e5e5e5;
     margin: 20px;
     margin-left: 0;
+    box-sizing: border-box;
 }
 
 .catalog-items .article-item:nth-child(3n) {

@@ -11,11 +11,10 @@ body {
 	width: 100%;
 	min-width: 940px;
 	position: relative;
-    background-color: chartreuse;
 }
 
 .section-inner {
-    background-color: coral;
+    
 }
 
 .section-inner {
@@ -47,12 +46,10 @@ body {
 
 .page-header {
     background-color: #f1f5f7;
-    padding-bottom: 60px;
 }
 
 .header-top-section {
-    background-color: #293449;
-  
+    background-color: #32425c;
 }
 
 .header-top-section-inner {
@@ -148,15 +145,24 @@ ul.header-top-list {
     display: none;
 }
 
-.header-bottom-section-inner {
-    height: 60px;
-    background-color: #32425c;
-    border-bottom: 5px solid #293449;
+.header-bottom-section {
+    
+    
 }
 
+.header-bottom-section-inner {
+    height: 120px;
+    background-color: #f1f5f7;
+    padding-bottom: 60px;
+}
+
+
 .header-navigation {
+    height: 55px;
     margin: 20px 0;
     padding-left: 50px;
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
 }
 
 .header-navigation li {
@@ -170,11 +176,10 @@ ul.header-top-list {
 
 .page-content {
     padding-top: 60px;
-    background-color: #ffffff;
+
 }
 
 .promo-section-inner {
-   background-color: #ffffff; 
     padding-bottom: 55px;
 }
 
@@ -185,6 +190,15 @@ ul.header-top-list {
     margin-bottom: 20px;
     margin-right: 20px;
     float: left;
+    background-color: #f6b22d;
+}
+
+.promo-item:nth-child(2) {
+    background-color: #4aafde;
+}
+
+.promo-item:nth-child(3) {
+    background-color: #cc79d1;
 }
 
 .promo-item:nth-child(3n) {
@@ -198,7 +212,10 @@ ul.header-top-list {
 .promo-item:nth-child(5) {
     float: right;
     margin-right: 0;
+    background-color: #85d179;
 }
+
+
 
 .promo-item-slider {
     width: 620px;
@@ -239,13 +256,14 @@ a.goods-header-button {
 }
 
 .goods-items .article-item {
-    width: 218px;
-    height: 318px;
+    width: 220px;
+    height: 320px;
     font-size: 18px;
     background-color: #ffffff;
     display: inline-block;
     border: 1px solid #e5e5e5;
     margin-right: 20px;
+    box-sizing: border-box;
 }
 
 .goods-items .article-item:last-child {
@@ -281,12 +299,13 @@ a.brands-header-button {
 
 .brand-item {
     display: inline-block;
-    height: 96px;
+    height: 98px;
+    width: 206px;
     border: 1px solid #e5e5e5;
     margin: 0 20px 20px 0;
-    width: 204px;
     background-color: #ffffff;
     padding: 23px 7px;
+    box-sizing: border-box;
 }
 
 .brand-item:nth-child(4n) {
@@ -303,6 +322,7 @@ a.brands-header-button {
 
 .services-section-inner {
     padding-top: 65px;
+    background-color: #f2f6f8;
 }
 
 .services-header {
@@ -347,7 +367,7 @@ a.brands-header-button {
 .tekhnomart-section-inner {
     padding-top: 75px;
     padding-bottom: 85px;
-    background-color: #ffffff;
+
 }
 
 .tekhnomart-left-column {
