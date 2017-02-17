@@ -169,20 +169,26 @@ ul.registration-form-list {
 }
 
 
-.header-navigation {
+ul.header-navigation-list {
     height: 55px;
     margin: 20px 0;
-    padding-left: 50px;
+    padding: 0;
     background-color: #32425c;
     border-bottom: 5px solid #293449;
 }
 
-.header-navigation li {
-    display: inline-block;
-    padding: 0;    
+ul.header-navigation-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
 }
 
-.header-navigation li > a {
+.header-navigation-list li {
+  
+}
+
+.header-navigation-list li > a {
     color: #f1f2f4;
 }
 
@@ -358,12 +364,18 @@ ul.catalog-sort-items {
     float: right;
 }
 
-ul.footer-navigation-top li {
-    display: inline-block;
+.footer-navigation ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 550px;
 }
 
-ul.footer-navigation-bottom li {
-    display: inline-block;
+ul.footer-navigation-bottom {
+    width: 525px;
+    padding-left: 25px;
 }
 
 .footer-bottom-section {
