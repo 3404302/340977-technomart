@@ -4,6 +4,8 @@ body {
     font-weight: normal;
     font-size: 18px;
     color: #000000;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .section {
@@ -117,14 +119,23 @@ ul.header-top-list {
     float: left;
     width: 300px;
     margin-right: 20px;
-    background-color: azure;
+    box-sizing: border-box;
     height: 72px;
+    color: #ee3643;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    text-align: left;
+}
+
+.header-middle-left p {
+    padding: 1px 1px 1px 53px;
+    margin: 0;
 }
 
 .header-middle-center {
     float: left;
     width: 270px;
-    background-color: azure;
     height: 72px;
 }
 
@@ -132,6 +143,17 @@ ul.header-top-list {
     border: 3px solid white;
     height: 39px;
     display: block;
+    font-size: 21px;
+    line-height: 18px;
+    color: #e9292a;
+    vertical-align: middle;
+}
+
+.header-middle-center p {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
 }
 
 .header-middle-right {
@@ -280,7 +302,9 @@ a.goods-header-button {
 }
 
 .article-item p {
-    
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .article-item .article-item-top {
@@ -294,14 +318,17 @@ a.goods-header-button {
 .article-item-bottom {
     position: absolute;
     bottom: 20px;
-    left: 30px;
-    width: 166px;
+    left: 18px;
+    width: 160px;
+    padding: 0 13px;
 }
 
 .article-item-bottom span {
     text-decoration: line-through;
     color: #999999;
     text-transform: uppercase;
+    font-size: 17px;
+    line-height: 18px;
 }
 
 .button.add-to-cart-button {
@@ -312,6 +339,10 @@ a.goods-header-button {
     display: block;
     box-sizing: border-box;
     margin: 0;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .article-item:hover {
