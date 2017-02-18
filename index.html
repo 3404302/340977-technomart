@@ -300,23 +300,21 @@
                         </a>
                         <form class="write-us-form" method="post" action="#">
                             <div class="write-us-form-top">
-                                <ul class="write-us-form-list">
-                                    <li>
-                                        <label for="name">Ваше имя:</label>
-                                        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-                                    </li>
-                                    <li>
-                                        <label for="email">Ваш e-mail:</label>
-                                        <input type="text" name="email" id="email" placeholder="Для отправки ответа">
-                                    </li>
-                                    <li>
-                                        <label for="comments">Текст письма:</label>
-                                        <textarea name="comments" id="comments" placeholder="В свободной форме"></textarea>
-                                    </li>
-                                </ul>
+                                <div class="write-us-form-block">
+                                    <label for="name">Ваше имя:</label>
+                                    <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+                                </div>
+                                <div class="write-us-form-block">     
+                                    <label for="email">Ваш e-mail:</label>
+                                    <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+                                </div>
+                                <div class="write-us-form-block">
+                                    <label for="comments">Текст письма:</label>
+                                    <textarea name="comments" id="comments" placeholder="В свободной форме" rows="4"></textarea>
+                                </div>
                             </div>
-                            <div class="write-us-form-bottom"> <!--Или тут достаточно padding указать для button, что бы серую область сделать?-->
-                                <input type="button" value="Отправить">
+                            <div class="write-us-form-bottom"> 
+                                <button class="button write-us-button">Отправить</button>
                             </div>
                         </form>
                     </div>
@@ -391,7 +389,7 @@
                         <a class="btn-social-ins" href="#">Inst</a>  
                     </div>
                     <div class="footer-htmlacademy">
-                        <p>разработано -<br>
+                        <p>Разработано -<br>
                             <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
                         </p>
                     </div>

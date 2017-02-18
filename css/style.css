@@ -1,6 +1,6 @@
 body {
     font-family: 'Cuprum', sans-serif;
-    line-height: 23px;
+    line-height: 24px;
     font-weight: normal;
     font-size: 18px;
     color: #000000;
@@ -467,18 +467,19 @@ a.brands-header-button {
 .popup.write-us {
     position: absolute;
     right: 160px;
-    top: 205px;
+    top: -205px; /* right - top: 205px;*/
     box-sizing: border-box;
     width: 620px;
     height: 430px;
     border-top: 7px solid #ee3643;
     background-color: #ffffff;
     z-index: 300;
-    
+    line-height: 18px;
+    font-size: 18px;
 }
 
 .popup.write-us a {
-    position: absolute; /*допилить*/
+    position: absolute; /*допилить закрытие*/
     top: 10px;
     right: 10px;
     z-index: 400;
@@ -486,16 +487,74 @@ a.brands-header-button {
 
 .write-us-form-top {
     position: relative;
-    height: 266px;
-    margin: 0 78px;
-    margin-top: 38px;
-       
+    height: 267px;
+    margin: 36px 80px 0 80px;
 }
 
-.write-us-form-bottom {
+.write-us-form-top:after {
+    clear: both;
+    content: "";
+    display: block; 
+}
+
+.write-us-form-block {
+    float: left;
+    box-sizing: border-box;
+    width: 220px;
+    margin-right: 20px;
+    text-align: left;
+    margin-bottom: 19px;
+}
+
+.write-us-form-block:nth-child(2) {
+    margin-right: 0;
+}
+
+.write-us-form-block:last-child {
+    text-align: left;
+    float: left;
+    width: 460px;
+    height: 145px;
+    margin: 0;
+}
+
+#name, #email, #comments {
+    box-sizing: border-box;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #999999;
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    width: 220px;
+    height: 38px;
+}
+
+#comments {
+    width: 460px;
+    height: 115px;
+}
+
+.write-us-form-bottom { /*проверить текст*/
     background-color: #f1f1f1;
     height: 120px;
     box-sizing: border-box;
+    line-height: 18px;
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 37px 80px;
+}
+
+.button.write-us-button { /*что то недопонимаю */
+    width: 460px;
+    height: 39px;
+    background-color: red;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #ee3643;
+    display: inline-block;
+    
 }
 
 .tekhnomart-left-column {
@@ -532,16 +591,26 @@ a.brands-header-button {
 
 .page-footer {
     background-color: #32425c;
+    text-align: left;
+    color: #ffffff;
 }
 
 .footer-top-section-inner {
-    padding-bottom: 55px;
+    padding-bottom: 47px;
 }
 
 .footer-top-contacts {
     float: left;
     width: 380px;
     margin-right: 10px;
+}
+
+.footer-adress {
+    margin-top: 23px;
+}
+
+.footer-adress p {
+    margin: 0;
 }
 
 .footer-top-navigation {
@@ -565,11 +634,13 @@ ul.footer-navigation-top a {
     color: #f1f5f7;
 }
 
-ul.footer-navigation-top:hover a, ul.footer-navigation-bottom:hover a {
+/* Тут для конкретного li надо сделать или для целого списка? Если для отдельно взятого li, то все переносится на li, особо без изменений */
+
+ul.footer-navigation-top li:hover a, ul.footer-navigation-bottom li:hover a {
     text-decoration: underline;
 }
 
-ul.footer-navigation-top:active a {
+ul.footer-navigation-top li:active a {
     opacity: 0.5;
     color: #f1f5f7;   
 }
@@ -583,7 +654,7 @@ ul.footer-navigation-bottom a {
     color: #ffd180;
 }
 
-ul.footer-navigation-bottom:active a {
+ul.footer-navigation-bottom li:active a {
     opacity: 0.5;
     color: #ffd180;
 }
@@ -593,33 +664,58 @@ ul.footer-navigation-bottom:active a {
 }
 
 .footer-bottom-section-inner {
-    
+    box-sizing: border-box;
+    height: 107px;
     padding-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.footer-bottom-section-inner p {
+    margin: 0;
 }
 
 .footer-copyright {
     float: left;
     width: 230px;
+    height: 40px;
     margin-right: 150px;
-    font-size: 15px;
 }
 
 .footer-social {
     float: left;
-    width: 160px;
+    height: 40px;
+    width: 175px;
+}
+
+.footer-htmlacademy a, .footer-backform a {
+    color: #ffd180;
+    text-decoration: none;
+}
+
+.footer-htmlacademy:hover a, .footer-backform:hover a {
+    text-decoration: underline;
+}
+
+.footer-htmlacademy:active a, .footer-backform:active a {
+    color: #ee3643;
+    text-decoration: none;
 }
 
 .footer-htmlacademy {
     float: right;
-    width: 120px;
+    height: 40px;
+    width: 140px;
+    box-sizing: border-box;
+    padding-left: 29px;
 }
 
 .footer-backform {
     float: right;
-    width: 120px;
-    margin-left: 10px;
-    font-size: 10px;
+    width: 140px;
+    height: 40px;
+    margin-right: 20px;
 }
 
 h1 {

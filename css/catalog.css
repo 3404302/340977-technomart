@@ -4,6 +4,8 @@ body {
     font-weight: normal;
     font-size: 18px;
     color: #000000;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .section {
@@ -109,21 +111,30 @@ ul.header-top-list {
 .header-middle-section-inner {
     padding: 45px 0;
     padding-bottom: 40px;
-    
+    background-color: #f1f5f7;
 }
 
 .header-middle-left {
     float: left;
     width: 300px;
     margin-right: 20px;
-    background-color: azure;
+    box-sizing: border-box;
     height: 72px;
+    color: #ee3643;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    text-align: left;
+}
+
+.header-middle-left p {
+    padding: 1px 1px 1px 53px;
+    margin: 0;
 }
 
 .header-middle-center {
     float: left;
     width: 270px;
-    background-color: azure;
     height: 72px;
 }
 
@@ -131,6 +142,17 @@ ul.header-top-list {
     border: 3px solid white;
     height: 39px;
     display: block;
+    font-size: 21px;
+    line-height: 18px;
+    color: #e9292a;
+    vertical-align: middle;
+}
+
+.header-middle-center p {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
 }
 
 .header-middle-right {
@@ -223,6 +245,7 @@ ul.header-navigation-list {
     border-top: 7px solid #ee3643;
     background-color: #ffffff;
     z-index: 300;
+    font-size: 30px;
     
 }
 
@@ -235,14 +258,54 @@ a.popup-cart-cross {
 
 .popup-cart-top {
     height: 130px;
-    margin: 0 80px;
+    margin-left: 80px;
     margin-top: 33px;
+    padding-top: 21px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.popup-cart-top p {
+    display: inline-block;
+    height: 66px;
+    text-align: center;
+    margin: 0;
+    margin-left: 32px;
 }
 
 .popup-cart-bottom {
     background-color: #f1f1f1;
     height: 113px;
     box-sizing: border-box;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.popup-cart-bottom a {
+    width: 220px;
+    height: 39px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 37px 10px;
+    text-decoration: none;
+    padding-top: 8px;   
+}
+
+.button.popup-cart-checkout {
+    margin-left: 80px;
+    background-color: #ee3643;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 3px;
+    
+}
+
+.button.popup-cart-catalog {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #f1f1f1;
+    border-radius: 3px;
 }
 
 .page-properties-header {
@@ -415,16 +478,26 @@ ul.catalog-sort-items {
 
 .page-footer {
     background-color: #32425c;
+    text-align: left;
+    color: #ffffff;
 }
 
 .footer-top-section-inner {
-    padding-bottom: 55px;
+    padding-bottom: 47px;
 }
 
 .footer-top-contacts {
     float: left;
     width: 380px;
     margin-right: 10px;
+}
+
+.footer-adress {
+    margin-top: 23px;
+}
+
+.footer-adress p {
+    margin: 0;
 }
 
 .footer-top-navigation {
@@ -448,11 +521,11 @@ ul.footer-navigation-top a {
     color: #f1f5f7;
 }
 
-ul.footer-navigation-top:hover a, ul.footer-navigation-bottom:hover a {
+ul.footer-navigation-top li:hover a, ul.footer-navigation-bottom li:hover a {
     text-decoration: underline;
 }
 
-ul.footer-navigation-top:active a {
+ul.footer-navigation-top li:active a {
     opacity: 0.5;
     color: #f1f5f7;   
 }
@@ -466,7 +539,7 @@ ul.footer-navigation-bottom a {
     color: #ffd180;
 }
 
-ul.footer-navigation-bottom:active a {
+ul.footer-navigation-bottom li:active a {
     opacity: 0.5;
     color: #ffd180;
 }
@@ -476,35 +549,59 @@ ul.footer-navigation-bottom:active a {
 }
 
 .footer-bottom-section-inner {
-    
+    box-sizing: border-box;
+    height: 107px;
     padding-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.footer-bottom-section-inner p {
+    margin: 0;
 }
 
 .footer-copyright {
     float: left;
     width: 230px;
+    height: 40px;
     margin-right: 150px;
-    font-size: 15px;
 }
 
 .footer-social {
     float: left;
-    width: 160px;
+    height: 40px;
+    width: 175px;
+}
+
+.footer-htmlacademy a, .footer-backform a {
+    color: #ffd180;
+    text-decoration: none;
+}
+
+.footer-htmlacademy:hover a, .footer-backform:hover a {
+    text-decoration: underline;
+}
+
+.footer-htmlacademy:active a, .footer-backform:active a {
+    color: #ee3643;
+    text-decoration: none;
 }
 
 .footer-htmlacademy {
     float: right;
-    width: 120px;
+    height: 40px;
+    width: 140px;
+    box-sizing: border-box;
+    padding-left: 29px;
 }
 
 .footer-backform {
     float: right;
-    width: 120px;
-    margin-left: 10px;
-    font-size: 10px;
+    width: 140px;
+    height: 40px;
+    margin-right: 20px;
 }
-
 
 h1 {
     color: #ffffff;
