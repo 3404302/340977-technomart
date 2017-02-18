@@ -209,8 +209,40 @@ ul.header-navigation-list {
     display: inline-block;
 }
 
-.popup-cart {
-    display: none;
+.page-properties-section-inner {
+    position: relative;
+}
+
+.popup.popup-cart {
+    position: absolute;
+    top: 90px;
+    left: 160px;
+    box-sizing: border-box;
+    width: 620px;
+    height: 282px;
+    border-top: 7px solid #ee3643;
+    background-color: #ffffff;
+    z-index: 300;
+    
+}
+
+a.popup-cart-cross {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    z-index: 400;
+}
+
+.popup-cart-top {
+    height: 130px;
+    margin: 0 80px;
+    margin-top: 33px;
+}
+
+.popup-cart-bottom {
+    background-color: #f1f1f1;
+    height: 113px;
+    box-sizing: border-box;
 }
 
 .page-properties-header {
@@ -315,17 +347,52 @@ ul.catalog-sort-items {
     display: inline-block;
 }
 
-.catalog-items .article-item {
+.article-item {
     width: 220px;
     height: 320px;
     font-size: 18px;
     background-color: #ffffff;
     display: inline-block;
     border: 1px solid #e5e5e5;
-    margin: 20px;
-    margin-left: 0;
+    margin-right: 20px;
     box-sizing: border-box;
+    position: relative;
 }
+
+.article-item img {
+    position: absolute;
+    left: 18px;
+    z-index: 200;
+}
+
+.article-item .article-item-top {
+    display: ;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 100; 
+}
+
+.article-item-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.article-item-bottom span {
+    text-decoration: line-through;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.article-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.article-item:hover img {
+    display: none;   
+}
+
 
 .catalog-items .article-item:nth-child(3n) {
     margin-right: 0;
@@ -373,9 +440,35 @@ ul.catalog-sort-items {
     width: 550px;
 }
 
+.footer-navigation a {
+    text-decoration: none;
+}
+
+ul.footer-navigation-top a {
+    color: #f1f5f7;
+}
+
+ul.footer-navigation-top:hover a, ul.footer-navigation-bottom:hover a {
+    text-decoration: underline;
+}
+
+ul.footer-navigation-top:active a {
+    opacity: 0.5;
+    color: #f1f5f7;   
+}
+
 ul.footer-navigation-bottom {
     width: 525px;
     padding-left: 25px;
+}
+
+ul.footer-navigation-bottom a {
+    color: #ffd180;
+}
+
+ul.footer-navigation-bottom:active a {
+    opacity: 0.5;
+    color: #ffd180;
 }
 
 .footer-bottom-section {

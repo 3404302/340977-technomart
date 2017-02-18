@@ -261,7 +261,7 @@ a.goods-header-button {
     font-size: 0;
 }
 
-.goods-items .article-item {
+.article-item {
     width: 220px;
     height: 320px;
     font-size: 18px;
@@ -270,6 +270,56 @@ a.goods-header-button {
     border: 1px solid #e5e5e5;
     margin-right: 20px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.article-item img {
+    position: absolute;
+    left: 18px;
+    z-index: 200;
+}
+
+.article-item p {
+    
+}
+
+.article-item .article-item-top {
+    display: ;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 100; 
+}
+
+.article-item-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 166px;
+}
+
+.article-item-bottom span {
+    text-decoration: line-through;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.button.add-to-cart-button {
+    width: 142px;
+    height: 38px;
+    background-color: #ee3643;
+    color: #ffffff;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.article-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.article-item:hover img {
+    display: none;   
 }
 
 .goods-items .article-item:last-child {
@@ -286,6 +336,7 @@ a.goods-header-button {
     padding-bottom: 65px;
     font-size: 0;
     background-color: #ffffff;
+    
 }
 
 .brands-header h2 {
@@ -305,13 +356,21 @@ a.brands-header-button {
 
 .brand-item {
     display: inline-block;
-    height: 98px;
+    height: 145px;
     width: 220px;
     border: 1px solid #e5e5e5;
     margin: 0 20px 20px 0;
     background-color: #ffffff;
-
     box-sizing: border-box;
+    padding: 22px 7px;
+}
+
+.brand-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.brand-item:active {
+    opacity: 0.3;
 }
 
 .brand-item:nth-child(4n) {
@@ -319,11 +378,7 @@ a.brands-header-button {
 }
 
 .brand-item > img {
-    
-}
-
-.write-us {
-    display: none;
+    margin: auto;
 }
 
 .services-section-inner {
@@ -374,7 +429,42 @@ a.brands-header-button {
 .tekhnomart-section-inner {
     padding-top: 75px;
     padding-bottom: 85px;
+    position: relative;
 
+}
+
+.popup.write-us {
+    position: absolute;
+    right: 160px;
+    top: 205px;
+    box-sizing: border-box;
+    width: 620px;
+    height: 430px;
+    border-top: 7px solid #ee3643;
+    background-color: #ffffff;
+    z-index: 300;
+    
+}
+
+.popup.write-us a {
+    position: absolute; /*допилить*/
+    top: 10px;
+    right: 10px;
+    z-index: 400;
+}
+
+.write-us-form-top {
+    position: relative;
+    height: 266px;
+    margin: 0 78px;
+    margin-top: 38px;
+       
+}
+
+.write-us-form-bottom {
+    background-color: #f1f1f1;
+    height: 120px;
+    box-sizing: border-box;
 }
 
 .tekhnomart-left-column {
@@ -436,9 +526,35 @@ a.brands-header-button {
     width: 550px;
 }
 
+.footer-navigation a {
+    text-decoration: none;
+}
+
+ul.footer-navigation-top a {
+    color: #f1f5f7;
+}
+
+ul.footer-navigation-top:hover a, ul.footer-navigation-bottom:hover a {
+    text-decoration: underline;
+}
+
+ul.footer-navigation-top:active a {
+    opacity: 0.5;
+    color: #f1f5f7;   
+}
+
 ul.footer-navigation-bottom {
     width: 525px;
     padding-left: 25px;
+}
+
+ul.footer-navigation-bottom a {
+    color: #ffd180;
+}
+
+ul.footer-navigation-bottom:active a {
+    opacity: 0.5;
+    color: #ffd180;
 }
 
 .footer-bottom-section {
