@@ -287,16 +287,23 @@ ul.header-navigation-list {
 }
 
 .breadcrumbs {
-    background-color: #ffffff;
+
     height: 60px;
 }
 
-.breadcrumbs ul {
+ul.breadcrumbs-list {
+    display: flex;
+    align-items: flex-start;
     margin: 0px;
 }
 
-.breadcrumbs li {
-    display: inline-block;
+.breadcrumbs-list li {
+    display: block;
+}
+
+.breadcrumbs-list a {
+    display: block;
+    height: 100%;
 }
 
 .page-properties-section-inner {
@@ -381,9 +388,13 @@ a.popup-cart-cross {
     background-color: #f2f6f8;
 }
 
-.page-properties-header h2 {
-    margin: 0 30px;
-    padding-top: 30px;
+h2 {
+    display: block;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #32425c;
 }
 
 .page-catalog-inner {
@@ -526,8 +537,7 @@ span.active-mark {
     position: absolute;
     top: 45px;
     right: 45px;
-    z-index: 100; 
-    
+    z-index: 100;
 }
 
 .article-item-top {
@@ -620,8 +630,60 @@ span.active-mark {
     margin: 12px 0 40px 0;
 }
 
-.catalog-pagination li {
-    display: inline-block;
+ul.catalog-pagination-list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.catalog-pagination-list li {
+    display: block;
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+.catalog-pagination-list a {
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    color: #000000;
+    height: 100%;
+    padding: 6px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    font-family: 'PTSansRegular', sans-serif;
+    font-size: 13px;
+}
+
+.catalog-pagination-list li:last-child {
+    width: 140px;
+}
+
+.catalog-pagination-list a:hover {
+    border: 1px solid #bdc6ca;
+}
+
+.catalog-pagination-list a:active {
+    border: 1px solid #ee3643;
+}
+
+.catalog-pagination-list .active a {
+    color: #ffffff;
+    background-color: #ee3643;
+    border-radius: 2px;
+    border-color: #ffffff;
+}
+
+.header-pagination-list a:hover {
+    background-color: #293449;
+}
+
+.header-pagination-list a:active {
+    background-color: #293449;
 }
 
 .catalog-info-section {
