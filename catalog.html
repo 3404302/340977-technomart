@@ -10,53 +10,102 @@
         <header class="page-header">
             <div class="section header-top-section">
                 <div class="section-inner header-top-section-inner">
+                    <ul class="header-top-list">
+                        <li>
+                            <div class="header-top-logo">
+                                <a href="index.html" >
+                                    <img src="img/Logo.jpg" alt="Логотип" width="220px" height="47px">
+                                </a>
+                            </div>
+                        </li>   
+                        <li>
+                            <form action="#" method="post" id="header-search">
+                                <input type="search" placeholder="Поиск:">
+                            </form> 
+                        </li>
+                        <li>
+                            <a class="button header-top-bookmarks" href="#">
+                                Закладки: <span class="counter">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="button header-top-cart" href="#">
+                                Корзина: <span class="counter">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="button header-top-checkout" href="#">Оформить заказ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <!--
+
+<div class="section header-top-section">
+                <div class="section-inner header-top-section-inner">
                     <div class="header-top-logo">
                         <a href="index.html" >
                             <img src="img/Logo.jpg" alt="Логотип" width="220px" height="47px">
                         </a>
                     </div>
-                    <div class="header-top-search">
-                        <form action="" method="post" id="header-search">
-                            <input type="search" placeholder="Поиск:">
-                        </form>    
-                    </div>
                     <div class="header-top-menu">
                         <ul class="header-top-list">
                             <li>
-                                <a class="button header-top-button" href="#">
+                                <form action="#" method="post" id="header-search">
+                                    <input type="search" placeholder="Поиск:">
+                                </form> 
+                            </li>
+                            <li>
+                                <a class="button header-top-bookmarks" href="#">
                                     Закладки: <span class="counter">0</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="button header-top-button" href="#">
+                                <a class="button header-top-cart" href="#">
                                     Корзина: <span class="counter">0</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="button header-top-button" href="#">Оформить заказ</a>
+                                <a class="button header-top-checkout" href="#">Оформить заказ</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="section  header-middle-section">
+
+-->
+            
+            
+            <div class="section  header-middle-section ">
                 <div class="section-inner  header-middle-section-inner">
-                    <div class="header-middle-left">
-                        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-                    </div>
-                    <div class="header-middle-center">
-                        <div class="header-middle-box">+7 (812) 555-05-55</div>
-                        <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                    </div>
-                    <div class="header-middle-right">
+                    <section class="header-middle-left"> <!--Прошу не ругать за br, если оно тут не к месту. В chrome при zoom-out 25% переносится строка. Не знаю, как по другому пока что сделать-->
+                        <p>Интернет-магазин<br>
+                            строительных материалов<br>
+                            и инструментов для ремонта</p>
+                    </section>
+                    <section class="header-middle-center">
+                        <div class="header-middle-box">
+                            <p>+7 (812) 555-05-55</p>
+                        </div>
+                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    </section>
+                    <section class="header-middle-right">
                         <div class="active registration-form">
-                            <a class="button header-login" href="#">Войти</a>
-                            <a class="button header-registration" href="#">Регистрация</a>
+                            <ul>
+                                <li>
+                                    <a class="button header-registration-button" href="#">Регистрация</a>
+                                </li>
+                                <li>
+                                    <a class="button header-login-button" href="#">Войти</a>
+                                </li>
+                            </ul>  
                         </div>
                         <div class="registration-form-login">
                             <div class="login-block">
                                 <a href="#">Равшан Джамшутович</a>
-                                <a href="button header-logoff"></a>
+                                <a href="button header-logoff-button"></a>
                             </div>
                             <ul class="registration-form-list">
                                 <li>
@@ -67,12 +116,12 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
             <div class="section  header-bottom-section">
                 <div class="section-inner  header-bottom-section-inner">
-                        <nav class="header-navigation">
+                    <nav class="header-navigation">
                         <ul class="header-navigation-list">
                             <li>
                                 <a href="index.html">Главная</a>
@@ -81,7 +130,7 @@
                                 <a href="">Компания</a>
                             </li>
                             <li>
-                                <a href="">Каталог</a>
+                                <a href="catalog.html">Каталог</a>
                             </li>
                             <li>
                                 <a href="">Новости</a>
@@ -218,7 +267,8 @@
                             </ul>
                         </div>
                         <div class="catalog-items">  
-                            <article class="article-item">
+                            <article class="article-item active">
+                                <span class="active-mark"></span>
                                 <img src="img/item-3000.jpg" alt="Bosch BFG 3000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -231,6 +281,7 @@
                                 </div>
                             </article>
                             <article class="article-item">
+                                <span class="active-mark"></span>
                                 <img src="img/item-6000.jpg" alt="Bosch BFG 6000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -242,7 +293,8 @@
                                     <a class="button add-to-cart-button" href="#">25500 Р.</a>
                                 </div>
                             </article>
-                            <article class="active article-item">
+                            <article class="article-item active">
+                                <span class="active-mark"></span>
                                 <img src="img/item-2000.jpg" alt="Bosch BFG 2000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -255,6 +307,7 @@
                                 </div>
                             </article>
                             <article class="article-item">
+                                <span class="active-mark"></span>
                                 <img src="img/item-3000.jpg" alt="Bosch BFG 3000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -266,7 +319,8 @@
                                     <a class="button add-to-cart-button" href="#">15500 Р.</a>
                                 </div>
                             </article>
-                            <article class="active article-item">
+                            <article class="article-item">
+                                <span class="active-mark"></span>
                                 <img src="img/item-6000.jpg" alt="Bosch BFG 6000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -279,6 +333,7 @@
                                 </div>
                             </article>
                             <article class="article-item">
+                                <span class="active-mark"></span>
                                 <img src="img/item-2000.jpg" alt="Bosch BFG 2000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -291,6 +346,7 @@
                                 </div>
                             </article>
                             <article class="active article-item">
+                                <span class="active-mark"></span>
                                 <img src="img/item-3000.jpg" alt="Bosch BFG 3000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -303,6 +359,7 @@
                                 </div>
                             </article>
                             <article class="article-item">
+                                <span class="active-mark"></span>
                                 <img src="img/item-6000.jpg" alt="Bosch BFG 6000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -315,6 +372,7 @@
                                 </div>
                             </article>
                             <article class="article-item">
+                                <span class="active-mark"></span>
                                 <img src="img/item-2000.jpg" alt="Bosch BFG 2000" width="184px" height="164px">
                                 <div class="article-item-top">
                                     <a class="button inner-cart-button" href="#">Купить</a>
@@ -391,10 +449,10 @@
                            Все права защищены
                         </p>
                     </div>
-                    <div class="footer-social">
-                        <a class="btn-social-vk" href="#">Vk</a>
-                        <a class="btn-social-fb" href="#">Fb</a>
-                        <a class="btn-social-ins" href="#">Inst</a>  
+                    <div class="footer-social"> <!--Или оставить тут текст??-->
+                        <a class="button social-vk" href="#"></a>
+                        <a class="button social-fb" href="#"></a>
+                        <a class="button social-ins" href="#"></a>
                     </div>
                     <div class="footer-htmlacademy">
                         <p>Разработано -<br>
