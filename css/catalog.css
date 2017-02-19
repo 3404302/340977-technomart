@@ -624,12 +624,28 @@ span.active-mark {
     display: inline-block;
 }
 
-.catalog-info-about {
-    height: 125px;
-    padding: 65px 0 70px 0;
+.catalog-info-section {
     background-color: #f2f6f8;
 }
 
+.catalog-info-about {
+    height: 125px;
+    padding: 60px 0 70px 0;
+    text-align: left;
+}
+
+.catalog-info-about b {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.catalog-info-about p {
+    margin-top: 30px;
+    margin-bottom: 24px;
+    font-family: 'PTSansRegular', sans-serif;
+    font-size: 13px;
+}
 
 .page-footer {
     background-color: #32425c;

@@ -760,7 +760,7 @@ a.brands-header-button {
 .popup.write-us {
     position: absolute;
     right: 160px;
-    top: -1205px; /* right - top: 205px;*/
+    top: -1205px; /* верная - top: 205px;*/
     box-sizing: border-box;
     width: 620px;
     height: 430px;
