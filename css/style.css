@@ -987,6 +987,25 @@ a.services-slider-3-button {
 ul.tekhnomart-list {
     font-size: 18px;
     line-height: 20px;
+    list-style: none;
+    width: 150px;
+    padding-left: 10px;
+    margin-bottom: 26px;
+}
+
+.tekhnomart-list .tekhnomart-line {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.tekhnomart-list .icon {
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    width: 25px;
+    height: 2px;
+    background: red;
 }
 
 a.tekhnomart-left-button, a.tekhnomart-write-us-button {
