@@ -41,7 +41,7 @@
             </div> 
             <div class="section  header-middle-section ">
                 <div class="section-inner  header-middle-section-inner">
-                    <section class="header-middle-left"> <!--Прошу не ругать за br, если оно тут не к месту. В chrome при zoom-out 25% переносится строка. Не знаю, как по другому пока что сделать-->
+                    <section class="header-middle-left">
                         <p>Интернет-магазин<br>
                             строительных материалов<br>
                             и инструментов для ремонта</p>
@@ -275,37 +275,46 @@
                     </div>
                     <div class="services-slider">
                         <div class="services-slide-inner">
-                            <div class="services-slider-buttons">
-                                <ul class="services-slider-menu">
-                                    <li class="active">
-                                        <a class="button services-slider-button" href="#">Доставка</a>
-                                    </li>
-                                    <li>
-                                        <a class="button services-slider-button" href="#">Гарантия</a>
-                                    </li>
-                                    <li>
-                                        <a class="button services-slider-button" href="#">Кредит</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="services-slider-slides">
-                                <div class="services-slider-1">  
-                                    <b>Доставка</b>
-                                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p>
-                                 <!--КАРТИНКИ ФОНОМ CSS-->
-                                </div>
-                                <div class="services-slider-2">
-                                    <b>Гарантия</b>
-                                    <p>Если купленный у нас товар поломается яили заискрит, а также в случае пожара, спровоцированного возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-                                    <img src="img/service-slider-2.png" alt="Гарантия">
-                                </div>
-                                <div class="services-slider-3">
-                                    <b>Кредит</b>
-                                    <p>Залезть в долговую яму стало проще! Кредитные консультанты придут к вам на помощь.</p>
-                                    <a class="btn" href="#">Отправить заявку</a>
-                                    <img src="img/service-slider-3.png" alt="Кредит">
-                                </div> 
-                            </div>
+                            <ul class="services-slider-list">
+                                <li class="opened">
+                                    <a class="button services-slider-button" href="#">Доставка</a>
+                                    <ul class="services-slider-list-inner slider-1">
+                                        <li>
+                                            <div> 
+                                                <b>Доставка</b>
+                                                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем,<br>
+                                                    поднимая его на ваш этаж!</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="button services-slider-button" href="#">Гарантия</a>
+                                    <ul class="services-slider-list-inner slider-2">
+                                        <li>
+                                            <div>
+                                                <b>Гарантия</b>
+                                                <p>Если купленный у нас товар поломается или заискрит,<br>
+                                                    а также в случае пожара, спровоцированного возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                                                    Дом уж восстановите как-нибудь сами.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="button services-slider-button" href="#">Кредит</a>
+                                    <ul class="services-slider-list-inner slider-3">
+                                        <li>
+                                            <div>
+                                                <b>Кредит</b>
+                                                <p>Залезть в долговую яму стало проще!<br>
+                                                    Кредитные консультанты придут к вам на помощь.</p>
+                                                <a class="button services-slider-3-button" href="#">Отправить заявку</a>
+                                            </div> 
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

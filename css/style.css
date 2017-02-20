@@ -8,6 +8,17 @@ body {
     vertical-align: middle;
 }
 
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px; 
+}
+
 .section {
 	display: block;
 	width: 100%;
@@ -474,7 +485,7 @@ h2 {
     color: #32425c;
 }
 
-a.goods-header-button, a.brands-header-button {
+a.goods-header-button, a.brands-header-button, a.services-slider-3-button {
     float: right;
     margin-right: 25px;
     height: 40px;
@@ -675,6 +686,10 @@ a.brands-header-button {
     text-align: left;
 }
 
+.services-section-inner {
+    height: 520px;
+}
+
 .services-section-inner p, .tekhnomart-section-inner p {
     margin-top: 30px;
     margin-bottom: 24px;
@@ -690,12 +705,15 @@ a.brands-header-button {
     margin-top: 1px;
 }
 
-.services-slider-menu {
+.services-header {
+    margin-bottom: 60px;
+}
+
+.services-slider-list {
     width: 240px;
     margin-right: 10px;
     float: left;
-    background-image: url(/img/vertical-line.png);
-    background-repeat: no-repeat;
+    background: url(/img/vertical-line.png) no-repeat 100% 0%;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -703,50 +721,106 @@ a.brands-header-button {
     margin: 0;
 }   
 
-.services-slider-menu li {
-    height: 60px;
-    background-color: aqua;
+.services-slider-list > li {
+    position: relative;
 }
 
-.button.services-slider-button {
+.services-slider-list li > a {
     display: block;
     box-sizing: border-box;
-    height: 100%;
-    text-decoration: none;
     padding-left: 20px;
     padding-top: 17px;
     color: #ffffff;
     background-color: #32425c;
     font-size: 21px;
     font-weight: bold;
+    text-decoration: none;
+    height: 60px;
 }
 
-.services-slider-menu a:hover {
-    background-color: #293449;
-}
-
-.services-slider-menu .active a {
+.services-slider-list .opened > a {
     background-color: #ffffff;
     color: #32425c;
 }
 
-.services-slider-slides {
-    width: 630px;
-    height: 285px;
-    float: right;
-    margin: 0;
-}
-
-.services-slider-slides b {
+.services-slider-list .opened > a:hover {
+    background-color: #ffffff;
     color: #32425c;
 }
 
-.services-slider-slides p {
-    width: 295px;
+.services-slider-list li > a:hover {
+    background-color: #293449;
 }
 
-.services-slider-2, .services-slider-3 {
+ul.services-slider-list-inner {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    left: 320px;
+    top: 0;
+}
+
+ul.services-slider-list-inner div {
+    display: block;
+    width: 620px;
+    height: 285px;
+}
+
+.services-slider b {
+    color: #32425c;
+}
+
+.services-slider p {
+    width: 296px;
+}
+
+.services-slider-list .slider-1 {
+    background: 
+    url(/img/service-slider-1.png) no-repeat 100% 10%,
+    url(/img/service-slider-1-shadow.png) no-repeat 100% 60%;
+}
+
+ul.services-slider-list-inner.slider-2 {
+    top: -60px;
+}
+
+.services-slider-list .slider-2 {
+    background: 
+    url(/img/service-slider-2.png) no-repeat 100% 5%,
+    url(/img/service-slider-2-shadow.png) no-repeat 100% 100%;
     display: none;
+}
+
+.services-slider-list .slider-2 p {
+    width: 400px;
+}
+
+ul.services-slider-list-inner.slider-3 {
+    top: -120px;
+}
+
+.services-slider-list .slider-3 p {
+    width: 400px;
+}
+
+.services-slider-list .slider-3 {
+    background: 
+    url(/img/service-slider-3.png) no-repeat 100% 0,
+    url(/img/service-slider-3-shadow.png) no-repeat 96% 100%;
+    display: none;
+}
+
+a.services-slider-3-button {
+    float: none;
+    height: 40px;
+    width: 220px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 6px;
+    text-transform: uppercase;
 }
 
 .tekhnomart-section-inner {
@@ -1064,16 +1138,4 @@ ul.footer-navigation-bottom a:active {
     width: 140px;
     height: 40px;
     margin-right: 20px;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 36px;
-    line-height: 30px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 30px;
-    
 }
