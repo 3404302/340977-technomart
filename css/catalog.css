@@ -74,12 +74,13 @@ ul.header-top-list {
     margin: 0;
    /* float: right; */
     display: flex;
+    list-style: none;
 }
 
-.header-top-list li {
+.header-top-list li a {
     display: block;
     box-sizing: border-box;
-    padding: 0;
+    padding-top: 11px;
     margin: 0;
     width: 150px;
     height: 42px;
@@ -91,9 +92,6 @@ ul.header-top-list {
     color: #ffffff;
     display: block;
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    padding-top: 11px;
 }
 
 .button.header-top-bookmarks {
@@ -112,18 +110,18 @@ ul.header-top-list {
 
 /*Логотип*/
 
-.header-top-list li:first-child {
+.header-top-list li .header-top-logo a {
     width: 220px;
     min-height: 47px;
     box-sizing: border-box;
     padding: 0;
 }
 
-.header-top-list li:first-child a{
+.header-top-list li:first-child a {
     padding: 0;
 }
 
-.header-top-list li:nth-child(2) {
+.header-top-list li:nth-child(2) #header-search {
     width: 270px;
     box-sizing: border-box;
 }
@@ -136,7 +134,7 @@ ul.header-top-list {
     
 }
 
-.header-top-list li:last-child {
+.header-top-list li:last-child a {
     background-color: #63a63e;
 }
 
@@ -248,37 +246,38 @@ ul.header-navigation-list {
     background-color: #32425c;
     border-bottom: 5px solid #293449;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     align-items: center;
-    font-size: 17px;
+    
 }
 
 .header-navigation-list li {
     display: inline-block;
     box-sizing: border-box;
-    width: 125px;
-    height: 55px;
 }
 
-.header-navigation-list li > a {
+.header-navigation-list li a {
     color: #f1f2f4;
     text-decoration: none;
     display: block;
-    height: 100%;
+    box-sizing: border-box;
     vertical-align: middle;
     padding-top: 17px;
+    width: 125px;
+    height: 55px;
+    font-size: 17px;
 }
 
-.header-navigation-list li:hover {
+.header-navigation-list a:hover {
     background-color: #293449;
 }
 
-.header-navigation-list li:active {
+.header-navigation-list a:active {
     background-color: #293449;
 }
 
-.header-navigation-list li:active a {
+.header-navigation-list a:active {
     color: #a8abaf;
 }
 

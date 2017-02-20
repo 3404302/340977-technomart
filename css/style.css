@@ -74,12 +74,13 @@ ul.header-top-list {
     margin: 0;
    /* float: right; */
     display: flex;
+    list-style: none;
 }
 
-.header-top-list li {
+.header-top-list li a {
     display: block;
     box-sizing: border-box;
-    padding: 0;
+    padding-top: 11px;
     margin: 0;
     width: 150px;
     height: 42px;
@@ -91,9 +92,6 @@ ul.header-top-list {
     color: #ffffff;
     display: block;
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    padding-top: 11px;
 }
 
 .button.header-top-bookmarks {
@@ -112,18 +110,18 @@ ul.header-top-list {
 
 /*Логотип*/
 
-.header-top-list li:first-child {
+.header-top-list li .header-top-logo a {
     width: 220px;
     min-height: 47px;
     box-sizing: border-box;
     padding: 0;
 }
 
-.header-top-list li:first-child a{
+.header-top-list li:first-child a {
     padding: 0;
 }
 
-.header-top-list li:nth-child(2) {
+.header-top-list li:nth-child(2) #header-search {
     width: 270px;
     box-sizing: border-box;
 }
@@ -136,7 +134,7 @@ ul.header-top-list {
     
 }
 
-.header-top-list li:last-child {
+.header-top-list li:last-child a {
     background-color: #63a63e;
 }
 
@@ -226,8 +224,6 @@ ul.header-top-list {
 }
 
 .header-middle-right li {
-    width: 150px;
-    height: 44px;
     box-sizing: border-box;
     float: right;
     margin-left: 10px;
@@ -238,11 +234,12 @@ ul.header-top-list {
 .header-middle-right a {
     display: block;
     box-sizing: border-box;
-    height: 100%;
     color: #000000; 
     text-align: left;
     padding-top: 11px;
     text-decoration: none;
+    width: 150px;
+    height: 44px;
 }
 
 .button.header-registration-button {
@@ -306,24 +303,24 @@ ul.header-navigation-list {
     justify-content: space-between;
     list-style: none;
     align-items: center;
-    font-size: 17px;
+    
 }
 
 .header-navigation-list li {
     display: inline-block;
     box-sizing: border-box;
-    width: 125px;
-    height: 55px;
 }
 
-.header-navigation-list li > a {
+.header-navigation-list li a {
     color: #f1f2f4;
     text-decoration: none;
     display: block;
     box-sizing: border-box;
-    height: 100%;
     vertical-align: middle;
     padding-top: 17px;
+    width: 125px;
+    height: 55px;
+    font-size: 17px;
 }
 
 .header-navigation-list a:hover {
