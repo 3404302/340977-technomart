@@ -221,7 +221,7 @@ a.button.header-top-checkout:active {
     width: 300px;
     margin-right: 20px;
     box-sizing: border-box;
-    height: 72px;
+    min-height: 72px;
     color: #ee3643;
     font-size: 16px;
     line-height: 23px;
@@ -277,7 +277,7 @@ a.button.header-top-checkout:active {
 }
 
 .registration-form {
-    display: none;
+    
 }
 
 .registration-form ul {
@@ -349,9 +349,8 @@ a.button.header-login-button .icon {
     opacity: 0.3;
 }
 
-.registration-form-login {
-    
-    
+.registration-form-login { /*убери что бы посмотреть блок */
+    display: none; 
 }
 
 .registration-form-login .login-block {
@@ -927,7 +926,8 @@ a.brands-header-button {
 }
 
 .services-section-inner {
-    height: 520px;
+    min-height: 520px;
+    padding-bottom: 1px;
 }
 
 .services-section-inner p, .tekhnomart-section-inner p {
@@ -949,16 +949,24 @@ a.brands-header-button {
     margin-bottom: 60px;
 }
 
+.services-slider {
+    width: auto;
+    min-height: 300px;
+    background: url(/img/vertical-line.png) no-repeat 230px 0px;
+    
+}
+
 .services-slider-list {
     width: 240px;
     margin-right: 10px;
     float: left;
-    background: url(/img/vertical-line.png) no-repeat 100% 0%;
     display: flex;
     flex-direction: column;
     list-style: none;
     padding-left: 0;
     margin: 0;
+    
+    
 }   
 
 .services-slider-list > li {
@@ -976,6 +984,7 @@ a.brands-header-button {
     font-weight: bold;
     text-decoration: none;
     height: 60px;
+    
 }
 
 .services-slider-list .opened > a {
@@ -999,12 +1008,12 @@ ul.services-slider-list-inner {
     list-style: none;
     left: 320px;
     top: 0;
+    min-height: 285px;
 }
 
 ul.services-slider-list-inner div {
     display: block;
     width: 620px;
-    height: 285px;
 }
 
 .services-slider b {
@@ -1019,6 +1028,7 @@ ul.services-slider-list-inner div {
     background: 
     url(/img/service-slider-1.png) no-repeat 100% 10%,
     url(/img/service-slider-1-shadow.png) no-repeat 100% 60%;
+    min-height: 285px;
 }
 
 ul.services-slider-list-inner.slider-2 {
@@ -1061,6 +1071,10 @@ a.services-slider-3-button {
     text-decoration: none;
     padding-top: 6px;
     text-transform: uppercase;
+}
+
+.tekhnomart-section {
+
 }
 
 .tekhnomart-section-inner {
@@ -1177,7 +1191,7 @@ button.close-popup-button {
 
 .tekhnomart-left-column {
     width: 540px;
-    height: 375px;
+    min-height: 375px;
     float: left;
 }
 
@@ -1233,12 +1247,12 @@ a.tekhnomart-left-button, .tekhnomart-write-us-button {
 .tekhnomart-right-column {
     float: right;
     width: 300px;
-    height: 375px;
+    min-height: 375px;
 }
 
 .tekhnomart-right-column p {
     width: 200px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 }
 
 .tekhnomart-right-column img {
@@ -1250,6 +1264,7 @@ a.tekhnomart-left-button, .tekhnomart-write-us-button {
     padding: 0;
     text-align: center;
     cursor: pointer;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     
 }
 

@@ -219,6 +219,7 @@ a.button.header-top-checkout:active {
 .header-middle-left {
     float: left;
     width: 300px;
+    min-height: 72px;
     margin-right: 20px;
     box-sizing: border-box;
     height: 72px;
@@ -919,7 +920,7 @@ ul.catalog-pagination-list {
 }
 
 .catalog-info-about {
-    height: 125px;
+    min-height: 125px;
     padding: 60px 0 70px 0;
     text-align: left;
 }
