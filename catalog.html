@@ -143,9 +143,7 @@
                     <div class="breadcrumbs">
                         <ul class="breadcrumbs-list">
                             <li>
-                                <a href="index.html">
-                                    <img src="img/icon-home.png" alt="home-logo">
-                                </a>
+                                <a href="index.html"></a>
                             </li>
                             <li>
                                 <a href="catalog.html">Каталог</a>
@@ -154,7 +152,7 @@
                                 <a href="#">Инструмент</a>
                             </li>
                             <li>
-                                <a href="#">Перфораторы</a>
+                                <a>Перфораторы</a>
                             </li>
                         </ul>
                     </div>
@@ -170,10 +168,10 @@
                             <p>Фильтр:</p>
                             <div class="catalog-filter-top">
                                 <h3>Цена:</h3>
-                                <input type="range" min="0" max="30000" id="range" name="range"> <!--Набор Gif-->
-                                <input type="number" id="range-from" name="range-from" placeholder="0">
+                                <input type="range" min="0" max="30000" id="range" name="range" class="filter-top-range"> <!--Набор Gif-->
+                                <input type="number" id="range-from" name="range-from" placeholder="0" class="filter-top-number">
                                 <span>-</span>
-                                <input type="number" id="range-to" name="range-to" placeholder="30000">
+                                <input type="number" id="range-to" name="range-to" placeholder="30000" class="filter-top-range-to">
                             </div>
                             <div class="catalog-filter-middle">
                                 <h3>Производители:</h3>
@@ -204,8 +202,8 @@
                                 <h3>Питание:</h3>
                                 <ul>
                                     <li>
-                                        <input type="radio" name="accum" id="accum">  
-                                        <label for="accum">Аккумуляторные</label>
+                                        <input type="radio" name="battery" id="accum">  
+                                        <label for="battery">Аккумуляторные</label>
                                     </li>
                                     <li>
                                         <input type="radio" name="power" id="power">
