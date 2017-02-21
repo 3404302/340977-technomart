@@ -18,6 +18,9 @@ h2 {
     margin-top: 30px;
     text-transform: uppercase;
     color: #32425c;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px
 }
 
 h3 {
@@ -532,6 +535,10 @@ ul.breadcrumbs-list {
     position: relative;
 }
 
+.popup-closed {
+  display: none;
+}
+
 .popup.popup-cart {
     position: absolute;
     top: 90px;
@@ -544,43 +551,46 @@ ul.breadcrumbs-list {
     z-index: 600;
     font-size: 30px;
     box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
-    
 }
 
-a.popup-cart-cross {
+button.close-popup-button {
     position: absolute; 
     top: 10px;
     right: 10px;
     z-index: 400;
+    display: block;
+    border-style: none;
+    background: #ffffff;
+    cursor: pointer;
 }
 
 .popup-cart-top {
     height: 130px;
-    margin-left: 80px;
     margin-top: 33px;
     padding-top: 21px;
     padding-bottom: 50px;
     box-sizing: border-box;
-    text-align: left;
+    background: url(/img/icon-add-cart.png) no-repeat 80px 15px;
 }
 
 .popup-cart-top p {
-    display: inline-block;
-    height: 66px;
-    text-align: center;
-    margin: 0;
-    margin-left: 32px;
+    margin-top: 25px;
+    margin-left: 60px;
 }
 
 .popup-cart-bottom {
     background-color: #f1f1f1;
     height: 113px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-around;
     box-sizing: border-box;
     font-size: 14px;
     text-transform: uppercase;
+    vertical-align: middle;
 }
 
-.popup-cart-bottom a {
+.popup-cart-bottom a, .popup-cart-bottom button {
     width: 220px;
     height: 39px;
     box-sizing: border-box;
@@ -591,7 +601,7 @@ a.popup-cart-cross {
 }
 
 .button.popup-cart-checkout {
-    margin-left: 80px;
+    
     background-color: #ee3643;
     color: #ffffff;
     border-color: #ffffff;
@@ -599,11 +609,16 @@ a.popup-cart-cross {
     
 }
 
-.button.popup-cart-catalog {
+.popup-cart-bottom > .close-popup-button2 {
     background-color: #ffffff;
+    position: relative;
     color: #000000;
     border-color: #f1f1f1;
     border-radius: 3px;
+    border-style: none;
+    text-transform: uppercase;
+    padding: 0;
+    
 }
 
 .page-properties-header {

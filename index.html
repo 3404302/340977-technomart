@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     </head>
@@ -345,10 +346,10 @@
             </div>
             <div class="section tekhnomart-section">
                 <div class="section-inner tekhnomart-section-inner">
-                    <div class="popup write-us"> 
-                        <a href="">
+                    <div class="popup write-us popup-closed" id="modal-popup"> 
+                        <button class="close-popup-button" id="close-popup-button">
                             <img src="img/icon-cross.png" alt="Закрыть">
-                        </a>
+                        </button>
                         <form class="write-us-form" method="post" action="#">
                             <div class="write-us-form-top">
                                 <div class="write-us-form-block">
@@ -395,7 +396,7 @@
                     <a href="https://goo.gl/maps/54R6osZSdj22">
                         <img src="img/map-small.jpg" alt="Карта" width="300px" height="158px">
                     </a>   
-                    <a class="button tekhnomart-write-us-button" href="#">Заблудились? Напишите нам!</a>
+                    <button class="button tekhnomart-write-us-button" id="open-popup-button">Заблудились? Напишите нам!</button>
                     </div>
                 </div>
             </div>
@@ -461,7 +462,7 @@
                 </div>
             </div>           
         </footer>
-    <script src="js/main.js"></script>
-	<script src="js/services-toggle.js"></script>
+    <script src="js/popup.js"></script>
+	
     </body>
 </html>

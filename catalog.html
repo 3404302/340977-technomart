@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/catalog.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     </head>
@@ -127,6 +128,18 @@
         <main class="page-content">
             <div class="section page-properties-section">
                 <div class="section-inner page-properties-section-inner">
+                    <div class="popup popup-cart" id="modal-popup-cart">
+                        <button class="close-popup-button" id="close-popup-button-cart">
+                            <img src="img/icon-cross.png" alt="Закрыть">
+                        </button>
+                        <div class="popup-cart-top">
+                            <p>Товар добавлен в корзину!</p>
+                        </div>
+                        <div class="popup-cart-bottom">
+                            <a class="button popup-cart-checkout" href="#">Оформить заказ</a>
+                            <button class="close-popup-button2" id="close-popup-button-cart2">Продолжить покупки</button>
+                        </div>
+                    </div>
                     <div class="breadcrumbs">
                         <ul class="breadcrumbs-list">
                             <li>
@@ -147,19 +160,6 @@
                     </div>
                     <div class="page-properties-header">
                         <h2>Перфораторы</h2>
-                    </div>
-                    <div class="popup popup-cart">
-                        <a class="popup-cart-cross" href="">
-                            <img src="img/icon-cross.png" alt="Закрыть">
-                        </a>
-                        <div class="popup-cart-top">
-                            <img src="img/icon-add-cart.png" alt="Товар добавлен">
-                            <p>Товар добавлен в корзину!</p>
-                        </div>
-                        <div class="popup-cart-bottom">
-                            <a class="button popup-cart-checkout" href="#">Оформить заказ</a>
-                            <a class="button popup-cart-catalog" href="catalog.html">Продолжить покупки</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -383,7 +383,7 @@
                                 <div class="article-item-bottom">
                                     <p>Перфоратор Bosch BFG 2000</p>
                                     <span></span>
-                                    <a class="button add-to-cart-button" href="#">12500 Р.</a>
+                                    <button class="button add-to-cart-button" href="#">12500 Р.</button>
                                 </div>
                             </article>
                         </div>
@@ -477,5 +477,6 @@
                 </div>
             </div>           
         </footer>
+        <script src="js/popup-cart.js"></script>
     </body>
 </html>
