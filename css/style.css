@@ -822,7 +822,7 @@ a.goods-header-button, a.brands-header-button, a.services-slider-3-button {
     bottom: 20px;
     width: 100%;
     padding: 0 0px;
-    font-family: 'PTSansRegular', sans-serif;
+    font-family: 'PT Sans', 'Arial' sans-serif;
     font-weight: bold;
 }
 
@@ -934,7 +934,7 @@ a.brands-header-button {
     margin-top: 30px;
     margin-bottom: 24px;
     width: 440px;
-    font-family: 'PTSansRegular', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
 }
 

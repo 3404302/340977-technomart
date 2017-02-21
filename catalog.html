@@ -6,6 +6,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/catalog.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     </head>
     <body>
         <header class="page-header">
@@ -128,7 +129,7 @@
         <main class="page-content">
             <div class="section page-properties-section">
                 <div class="section-inner page-properties-section-inner">
-                    <div class="popup popup-cart" id="modal-popup-cart">
+                    <div class="popup popup-cart popup-closed" id="modal-popup-cart">
                         <button class="close-popup-button" id="close-popup-button-cart">
                             <img src="img/icon-cross.png" alt="Закрыть">
                         </button>
@@ -216,11 +217,13 @@
                     </div>
                     <div class="catalog-right-column">
                         <div class="catalog-sort">
-                            <span>Сортировка:</span>
                             <ul class="catalog-sort-items">
                                 <li>
-                                    <a href="#">По цене</a>
-                                </li> <!--не пойму, получается это ссылка?-->
+                                    Сортировка:
+                                </li>
+                                <li>
+                                    <a class="active" href="#">По цене</a>
+                                </li>
                                 <li>
                                     <a href="#">По типу</a>
                                 </li>
@@ -228,13 +231,11 @@
                                     <a href="#">По функционалу</a>
                                 </li>
                                 <li>
-                                    <a class="button-up catalog-sort-button" href="#">
-                                        <img src="#" alt="icon-sort-up"> <!--стрелки на css же будут?-->
+                                    <a class="button-up catalog-sort-button active" href="#">
                                     </a>
                                 </li>
                                 <li>
                                     <a class="button-down catalog-sort-button" href="#">
-                                        <img src="#" alt="icon-sort-down"> <!--стрелки на css же будут?-->
                                     </a>
                                 </li>
                             </ul>

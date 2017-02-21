@@ -527,7 +527,7 @@ ul.breadcrumbs-list {
 .breadcrumbs-list li {
     display: block;
     vertical-align: middle;
-    margin-left: 1px;
+    margin-right: 5px;
     
 }
 
@@ -538,7 +538,7 @@ ul.breadcrumbs-list {
     min-width: 15px;
     text-align: center;
     padding-left: 27px;
-    font-family: 'PTSansRegular', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 60px;
     position: relative;
@@ -723,23 +723,62 @@ button.close-popup-button {
 }
 
 .catalog-sort {
-    float: right;
     width: 700px;
-    font-size: 18px;
-}
-
-.catalog-sort span {
-    float: left;
+    height: 42px;
+    margin-bottom: 20px;
+    background: #f7f3ec;
+    display: block;
+    vertical-align: middle;
 }
 
 ul.catalog-sort-items {
-    float: right;
+    list-style: none;
     margin: 0;
-    margin-left: 90px;
+    padding: 0;
+    height: 40px;
+    font-size: 0;
 }
 
-.catalog-sort li {
+ul.catalog-sort-items li {
+    vertical-align: middle;
     display: inline-block;
+    text-align: left;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    vertical-align: middle;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+ul.catalog-sort-items li:not(li:first-child) {
+    text-align: center;
+}
+
+ul.catalog-sort-items li:first-child {
+    width: 185px;
+    margin-left: 15px;
+}
+
+ul.catalog-sort-items li:last-child {
+    width: 40px;
+    height: 40px;
+}
+
+ul.catalog-sort-items li:nth-child(5) {
+    width: 40px;
+    height: 40px;
+}
+
+ul.catalog-sort-items a {
+    display: block;
+    width: 140px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+ul.catalog-sort-items li a.active {
+    color: #ee3643;
 }
 
 .article-item {
@@ -829,7 +868,7 @@ span.active-mark {
     bottom: 20px;
     width: 100%;
     padding: 0 0px;
-    font-family: 'PTSansRegular', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: bold;
 }
 
@@ -907,7 +946,7 @@ ul.catalog-pagination-list {
     line-height: 38px;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
-    font-family: 'PTSansRegular', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
 }
 
@@ -957,7 +996,7 @@ ul.catalog-pagination-list {
 .catalog-info-about p {
     margin-top: 30px;
     margin-bottom: 24px;
-    font-family: 'PTSansRegular', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
 }
 
