@@ -1,11 +1,7 @@
 body {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     line-height: 24px;
-    font-weight: normal;
-    font-size: 18px;
-    color: #000000;
     text-align: center;
-    vertical-align: middle;
 }
 
 h1 {
@@ -33,10 +29,6 @@ h3 {
 	width: 100%;
 	min-width: 940px;
 	position: relative;
-}
-
-.section-inner {
-    
 }
 
 .section-inner {
@@ -105,65 +97,115 @@ ul.header-top-list {
     width: 150px;
     height: 42px;
     font-size: 17px;
-}
-
-.header-top-list a {
     text-decoration: none;
     color: #ffffff;
-    display: block;
     box-sizing: border-box;
 }
 
-.button.header-top-bookmarks {
-    background-image: url(/img/icon-bookmark.png);
-    background-repeat: no-repeat;
-    background-position: 16px 50%;
-    opacity: 0.3; 
+.header-top-list .icon {
+    position: absolute;
+	top: 12px;
+	left: 10px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
 }
 
-.button.header-top-cart {
-    background-image: url(/img/icon-basket.png);
-    background-repeat: no-repeat;
-    background-position: 16px 50%;
-    opacity: 0.3; 
+input[type=search] {
+    background-color: #32425c;
+    border: 0px;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 18px;
+    height: 100%;
+    width: 270px;
+    box-sizing: border-box;
+    padding-left: 48px;
+}
+
+#header-search:hover input[type=search] {
+    background-color: #212a3a;
+}
+
+#header-search:hover .icon {
+    opacity: 1;    
+}
+
+input[type=search]:focus {
+    background-color: #ffffff;
+    color: black;
+}
+
+input[type=search]:focus #header-search .icon {
+    background: url(/img/icon-search-red.png) no-repeat 0 0;
+    z-index: 500;
+}
+
+.button.header-top-bookmarks, .button.header-top-cart, #header-search {
+    position: relative;
+}
+
+.button.header-top-bookmarks .icon {
+    background: url(/img/icon-bookmark.png) no-repeat 0 0;
+}
+
+.button.header-top-cart .icon {
+    background: url(/img/icon-basket.png) no-repeat 0 0;
+}
+
+#header-search .icon {
+    background: url(/img/icon-search.png) no-repeat 0 0;
+}
+
+.header-top-list a:hover .icon {
+    opacity: 1;    
+}
+
+.header-top-list a:hover {
+    background-color: #212a3a;
+}
+
+.header-top-list a:active .icon {
+    opacity: 0.5;    
+}
+
+.header-top-list a:active {
+    opacity: 0.5;
+}
+
+a.button.header-top-checkout:hover {
+    background-color: #5fbb2d;
+}
+
+a.button.header-top-checkout:active {
+    opacity: 0.51;
 }
 
 /*Логотип*/
 
-.header-top-list li .header-top-logo a {
+.header-top-logo a {
     width: 220px;
     min-height: 47px;
     box-sizing: border-box;
     padding: 0;
+    position: relative;
+    z-index: 10;
 }
 
 .header-top-list li:first-child a {
     padding: 0;
+    width: 220px;
 }
 
 .header-top-list li:nth-child(2) #header-search {
     width: 270px;
+    height: 100%;
     box-sizing: border-box;
-}
-
-.header-top-list li:nth-child(3) {
-    
-}
-
-.header-top-list li:nth-child(4) {
-    
 }
 
 .header-top-list li:last-child a {
     background-color: #63a63e;
 }
-
-/*
-.header-top-button {
-    float: right;
-    margin-left: 10px;
-}
-*/
 
 .header-middle-section-inner {
     padding-top: 45px;
@@ -231,6 +273,10 @@ ul.header-top-list {
     height: 72px;
 }
 
+.registration-form {
+    display: none;
+}
+
 .registration-form ul {
     width: 300px;
     height: 72px;
@@ -251,59 +297,163 @@ ul.header-top-list {
     
 }
 
-.header-middle-right a {
+.header-middle-right li a {
     display: block;
     box-sizing: border-box;
-    color: #000000; 
-    text-align: left;
-    padding-top: 11px;
-    text-decoration: none;
     width: 150px;
-    height: 44px;
+    height: 42px;
+    font-size: 21px;
+    text-decoration: none;
+    color: #000000;
+    vertical-align: middle;
+    line-height: 42px;
+    position: relative;
 }
 
 .button.header-registration-button {
-    padding-left: 24px;
+    
 }
 
 .button.header-login-button {
-    padding-left: 0px;
-}
-
-.header-middle-right li:last-child {
+    position: relative;
+    padding-left: 15px;
     width: 121px;
 }
 
-.button.header-login-button:before {
-    display: block;
-    background-image: url(/img/icon-login.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    width: 19px;
-    height: 17px;
-    margin: 0;
-    content: "";
-    opacity: 0.3;
-    padding-left: 15px;
-}
-
-.registration-form-login {
-    display: none;
+a.button.header-login-button .icon {
+    position: absolute;
+	top: 12px;
+	left: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(/img/icon-login.png) no-repeat 0 0;
 }
 
 .header-middle-right a:hover {
     color: #ee3643;
-    opacity: 1;
+}
+
+.header-middle-right a:hover .icon {
+    background: url(/img/icon-login-hover.png) no-repeat 0 0;
+}
+
+.header-middle-right a:active .icon {
+    background: url(/img/icon-login-test.png) no-repeat 0 0;
 }
 
 .header-middle-right a:active {
+    color: #000000;
     opacity: 0.3;
-    overflow: visible;
 }
 
-.header-bottom-section {
+.registration-form-login {
     
     
+}
+
+.registration-form-login .login-block {
+    width: 300px;
+    height: 45px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.registration-form-login > .login-block a {
+    display: block;
+    width: 240px;
+    height: 100%;
+    position: relative;
+    vertical-align: middle;
+    line-height: 45px;
+    font-size: 21px;
+    text-align: right;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.registration-form-login .login-block a.header-logoff-button {
+    width: 60px;
+}
+
+.registration-form-login .login-block .icon {
+    position: absolute;
+	top: 13px;
+	left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(/img/icon-user.png) no-repeat 0 0;
+}
+
+.login-block a.button.header-logoff-button .icon {
+    top: 15px;
+    left: 25px;
+    background: url(/img/icon-login.png) no-repeat 0 0;
+}
+
+.login-block a:hover .icon {
+    background: url(/img/icon-user-hover.png) no-repeat 0 0;
+}
+
+a.button.header-logoff-button:hover .icon {
+    background: url(/img/icon-login-hover.png) no-repeat 0 0;
+}
+
+.login-block a:active  {
+    opacity: 0.3;
+}
+
+a.button.header-logoff-button:active {
+    opacity: 0.3;
+}
+
+.login-block a:active .icon {
+    background: url(/img/icon-user-test.png) no-repeat 0 0;
+}
+
+a.button.header-logoff-button:active .icon {
+    background: url(/img/icon-login-test.png) no-repeat 0 0;
+}
+
+ul.registration-form-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;   
+}
+
+ul.registration-form-list li {
+    display: inline;
+    background-color: #f1f5f7;
+    box-sizing: border-box;
+    height: 47px;
+    margin-left: 13px;
+}
+
+ul.registration-form-list li:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul.registration-form-list li:last-child {
+    margin-left: 0;
+}
+
+
+ul.registration-form-list li a {
+    display: inline;
+    color: #32425c;
+    font-size: 16px;
+    text-decoration: underline;
+    
+}
+
+ul.registration-form-list li span {
+    display: block;
+    width: 20px;
+    height: 47px;
+    content: " asd";
+    background: url(/img/list-dot.png) no-repeat 50% 45%;
 }
 
 .header-bottom-section-inner {
@@ -329,6 +479,7 @@ ul.header-navigation-list {
 .header-navigation-list li {
     display: inline-block;
     box-sizing: border-box;
+    vertical-align: middle;
 }
 
 .header-navigation-list li a {
@@ -336,7 +487,7 @@ ul.header-navigation-list {
     text-decoration: none;
     display: block;
     box-sizing: border-box;
-    vertical-align: middle;
+    
     line-height: 55px;
     width: 125px;
     font-size: 17px;
@@ -561,6 +712,7 @@ a.goods-header-button, a.brands-header-button, a.services-slider-3-button {
     font-size: 18px;
     background-color: #ffffff;
     display: inline-block;
+    vertical-align: middle;
     border: 1px solid #e5e5e5;
     margin-right: 20px;
     box-sizing: border-box;
@@ -604,20 +756,55 @@ a.goods-header-button, a.brands-header-button, a.services-slider-3-button {
 .article-item-top a.button {
     display: block;
     box-sizing: border-box;
+    font-size: 14px;
     width: 135px;
     height: 38px;
+    line-height: 38px;
     margin-top: 8px;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
-    color: #32425c;
+    
+}
+
+.button.inner-favorites-button {
     border: 3px solid #63a63e;
-    padding-top: 6px;
+    color: #32425c;
 }
 
 .button.inner-cart-button {
     color: #ffffff;
-    background-color: #63a63e;  
+    background-color: #63a63e; 
+    border-top: 3px solid #63a63e;
+    border-bottom: 3px solid #367315;
+}
+
+.button.inner-cart-button .icon {
+    background: url(/img/icon-basket.png) no-repeat;
+    position: absolute;
+	top: 19px;
+	left: 13px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+}
+
+.button.inner-cart-button:hover {
+    border-top: 3px solid #5fbb2d;
+    background: #5fbb2d;
+}
+
+.button.inner-cart-button:hover .icon {
+    opacity: 1;
+}
+
+.button.inner-cart-button:active {
+    background: #518534;
+    border: 3px solid #518534;
+}
+
+.button.inner-cart-button:hover .icon {
+    opacity: 1;
 }
 
 .button.inner-favorites-button:hover {
@@ -700,6 +887,7 @@ a.brands-header-button {
 
 .brand-item {
     display: inline-block;
+    vertical-align: middle;
     height: 145px;
     width: 220px;
     border: 1px solid #e5e5e5;
@@ -966,7 +1154,7 @@ a.services-slider-3-button {
     border-radius: 2px;
     color: #ffffff;
     background-color: #ee3643;
-    display: inline-block;
+    
     
 }
 
@@ -1138,13 +1326,13 @@ ul.footer-navigation-bottom a:active {
 }
 
 .footer-social {
-    height: 40px;
+    float: left;
     min-width: 175px;
-    
 }
 
 .footer-social a {
     display: inline-block;
+    vertical-align: middle;
     box-sizing: border-box;
     width: 40px;
 	height: 40px;
@@ -1170,20 +1358,6 @@ ul.footer-navigation-bottom a:active {
     background-color: #ee3643;
 }
 
-.footer-htmlacademy a, .footer-backform a {
-    color: #ffd180;
-    text-decoration: none;
-}
-
-.footer-htmlacademy a:hover, .footer-backform a:hover {
-    text-decoration: underline;
-}
-
-.footer-htmlacademy a:active, .footer-backform a:active {
-    color: #ee3643;
-    text-decoration: none;
-}
-
 .footer-htmlacademy {
     float: right;
     height: 40px;
@@ -1197,4 +1371,18 @@ ul.footer-navigation-bottom a:active {
     width: 140px;
     height: 40px;
     margin-right: 20px;
+}
+
+.footer-htmlacademy a, .footer-backform a {
+    color: #ffd180;
+    text-decoration: none;
+}
+
+.footer-htmlacademy:hover a, .footer-backform:hover a {
+    text-decoration: underline;
+}
+
+.footer-htmlacademy:active a, .footer-backform:active a {
+    color: #ee3643;
+    text-decoration: none;
 }
